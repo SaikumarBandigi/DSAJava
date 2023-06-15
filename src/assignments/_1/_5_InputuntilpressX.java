@@ -26,7 +26,5 @@ public class _5_InputuntilpressX {
 
         }
         System.out.println(sum);
-
-
     }
 }
