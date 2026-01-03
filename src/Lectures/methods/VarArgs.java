@@ -18,7 +18,7 @@ public class VarArgs {
 
     }
 
-    private static void show(int... v) {
+    private static void show(int ...v) {
         System.out.println(Arrays.toString(v));
 
         int[] a = {1, 2, 3,};
