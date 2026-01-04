@@ -2,7 +2,7 @@ package leetcode.MathTut;
 
 public class DivideTwoIntegers {
     public static void main(String[] args) {
-        System.out.println(new DivideTwoIntegers().divide(4, -2));
+        System.out.println(new DivideTwoIntegers().divide(100, 3));
     }
 
     public int divide(int dividend, int divisor) {
@@ -29,7 +29,6 @@ public class DivideTwoIntegers {
                 temp <<= 1;
                 multiple <<= 1;
             }
-
             a -= temp;
             result += multiple;
         }
