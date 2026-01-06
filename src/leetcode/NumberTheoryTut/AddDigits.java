@@ -22,3 +22,13 @@ public class AddDigits {
     }
 
 }
+
+/*
+
+Outer repetition
+“Keep reducing the number until it becomes one digit”
+
+Inner repetition
+“Break the number into digits and add them”
+
+ */
