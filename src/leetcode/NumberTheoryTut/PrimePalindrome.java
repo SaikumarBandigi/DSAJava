@@ -14,6 +14,7 @@ public class PrimePalindrome {
         if (n <= 3) return 3;
         if (n <= 5) return 5;
         if (n <= 7) return 7;
+
         if (n <= 11) return 11;
 
         // generate only odd-length palindromes
@@ -51,7 +52,7 @@ public class PrimePalindrome {
     }
 
     public static void main(String[] args) {
-        int n = 13;
+        int n = 180;
         System.out.println(primePalindrome(n));
     }
 
