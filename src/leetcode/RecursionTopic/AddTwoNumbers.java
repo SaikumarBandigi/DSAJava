@@ -16,41 +16,45 @@ class MyLinkedList {
 
     // Add at end
     public void add(int val) {
-        ListNode newNode = new ListNode(val);
-
+        ListNode listNode = new ListNode(val);
         if (head == null) {
-            head = tail = newNode;
+            head = tail = listNode;
         } else {
-            tail.next = newNode;
-            tail = newNode;
+            tail.next = listNode;
+            tail = listNode;
         }
     }
 
     public ListNode getHead() {
         return head;
     }
+    public void printList() {
+        ListNode temp = head;
+        while (temp != null) {
+            System.out.print(temp.val);
+            if (temp.next != null) {
+                System.out.print(" -> ");
+            }
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+
 }
 
 
 public class AddTwoNumbers {
     public static void main(String[] args) {
 
-        // l1 = [9,9,9,9,9,9,9]
         MyLinkedList list1 = new MyLinkedList();
-        list1.add(9);
-        list1.add(9);
-        list1.add(9);
-        list1.add(9);
-        list1.add(9);
-        list1.add(9);
-        list1.add(9);
+        list1.add(2);
+        list1.add(4);
+        list1.add(3);
 
-        // l2 = [9,9,9,9]
         MyLinkedList list2 = new MyLinkedList();
-        list2.add(9);
-        list2.add(9);
-        list2.add(9);
-        list2.add(9);
+        list2.add(5);
+        list2.add(6);
+        list2.add(4);
 
         ListNode result = addTwoNumbers(list1.getHead(), list2.getHead());
         printList(result);
