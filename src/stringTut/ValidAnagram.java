@@ -2,6 +2,7 @@ package stringTut;
 
 public class ValidAnagram {
     public static void main(String[] args) {
+
         String s = "anagram";
         String t = "nagaram";
         System.out.println(new ValidAnagram().isAnagram(s, t));
