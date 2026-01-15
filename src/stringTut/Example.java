@@ -5,21 +5,22 @@ import java.util.Arrays;
 public class Example {
     public static void main(String[] args) {
 
-        int[] a = {1, 2, 3, 4, 5, 1, 2};
-        findDuplicate(a);
+
+        int a = 15, b = 30;
+        System.out.println(LCM(a, b));
 
     }
 
-    private static void findDuplicate(int[] a) {
+    static int LCM(int a, int b) {
+        return (a * b) / GCD(a, b);
+    }
 
-        Arrays.sort(a);
-
-        for (int i = 1; i < a.length; i++) {
-            if (a[i] == a[i - 1]) {
-                System.out.println(a[i]);
-            }
+    private static int GCD(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
         }
-
-
+        return a;
     }
 }
