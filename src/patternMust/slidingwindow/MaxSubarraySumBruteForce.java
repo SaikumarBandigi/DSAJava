@@ -14,9 +14,9 @@ public class MaxSubarraySumBruteForce {
         for (int i = 0; i <= n - k; i++) {
             int currentSum = 0;
             for (int j = i; j < i + k; j++) {
-                currentSum+= arr[j];
+                currentSum += arr[j];
             }
-            maxSum = Math.max(maxSum, currentSum);
+            maxSum = Math.max(currentSum, maxSum);
         }
         return maxSum;
     }
