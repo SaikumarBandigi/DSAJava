@@ -1,6 +1,6 @@
 package patternMust.slidingwindow;
 
-public class MinimumSizeSubArraySum {
+public class MinimumSizeSubarraySumVariableWindow {
     public static void main(String[] args) {
         int[] arr = {2, 4, 3};
         int target = 7;

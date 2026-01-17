@@ -1,6 +1,6 @@
 package patternMust.slidingwindow;
 
-public class MaximumSubarrayBruteForce {
+public class MaximumSubarrayVariableWindow {
     public static void main(String[] args) {
         int[] nums = {1, 2, 3, 4};
         System.out.println(maxSubArray(nums));
