@@ -1,8 +1,8 @@
 package patternMust.slidingwindow;
 
-public class MinimumSizeSubarraySumVariableWindow {
+public class MinimumSizeSubarraySumWindow {
     public static void main(String[] args) {
-        int[] arr = {2, 4, 3};
+        int[] arr = {1, 2, 3, 4};
         int target = 7;
 
         System.out.println(minSubArrayLenBruteForce(target, arr));
@@ -32,7 +32,6 @@ public class MinimumSizeSubarraySumVariableWindow {
     }
 
     public static int minSubArrayLenOptimized(int target, int[] nums) {
-
         int left = 0;
         int sum = 0;
         int minLen = Integer.MAX_VALUE;
