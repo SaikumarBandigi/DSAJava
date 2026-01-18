@@ -1,13 +1,33 @@
 package patternMust.slidingwindow;
 
-public class MinimumSizeSubarraySumWindow {
+public class MinimumSizeSubarraySumVariableWindow {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4};
+        int[] arr = {2, 3, 1, 2};
         int target = 7;
 
         System.out.println(minSubArrayLenBruteForce(target, arr));
         System.out.println(minSubArrayLenOptimized(target, arr));
     }
+
+    public static int minSubArrayLenOptimized(int target, int[] nums) {
+        int left = 0;
+        int sum = 0;
+        int minLen = Integer.MAX_VALUE;
+
+        for (int right = 0; right < nums.length; right++) {
+            sum += nums[right];
+
+            // shrink window while condition satisfied
+            while (sum >= target) {
+                minLen = Math.min(minLen, right - left + 1);
+                sum -= nums[left];
+                left++;
+            }
+        }
+
+        return minLen == Integer.MAX_VALUE ? 0 : minLen;
+    }
+
 
     public static int minSubArrayLenBruteForce(int target, int[] nums) {
 
@@ -31,23 +51,5 @@ public class MinimumSizeSubarraySumWindow {
 
     }
 
-    public static int minSubArrayLenOptimized(int target, int[] nums) {
-        int left = 0;
-        int sum = 0;
-        int minLen = Integer.MAX_VALUE;
-
-        for (int right = 0; right < nums.length; right++) {
-            sum += nums[right];
-
-            // shrink window while condition satisfied
-            while (sum >= target) {
-                minLen = Math.min(minLen, right - left + 1);
-                sum -= nums[left];
-                left++;
-            }
-        }
-
-        return minLen == Integer.MAX_VALUE ? 0 : minLen;
-    }
 
 }
