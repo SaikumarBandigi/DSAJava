@@ -2,7 +2,8 @@ package patternMust.slidingwindow;
 
 public class MaximumSubarrayVariableWindow {
     public static void main(String[] args) {
-        int[] nums = {1, 2, 3, 4};
+        int[] nums = { -5, 2, 3 };
+
         System.out.println(maxSubArray(nums));
         System.out.println(maxSumArrayTechniqueKadanesAlgorithmTypeDynamicProgrammingGreedy(nums));
         System.out.println(maxSumVariableWindow(nums));
