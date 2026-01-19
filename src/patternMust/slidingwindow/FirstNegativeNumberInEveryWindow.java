@@ -14,9 +14,11 @@ public class FirstNegativeNumberInEveryWindow {
         System.out.println(firstNegativeInEveryWindowBruteForce(arr, k));
     }
 
-    static List<Integer> firstNegativeInEveryWindowBruteForce(int[] arr, int k) {
+    static List<Integer>
+    firstNegativeInEveryWindowBruteForce(int[] arr, int k) {
 
-        List<Integer> result = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
+
 
         for (int i = 0; i <= arr.length - k; i++) {
             int firstNegative = 0;
@@ -26,11 +28,12 @@ public class FirstNegativeNumberInEveryWindow {
                     break;
                 }
             }
-            result.add(firstNegative);
+            list.add(firstNegative);
         }
 
-        return result;
+        return list;
     }
+
     public static List<Integer> firstNegativeInEveryWindow(int[] arr, int k) {
 
         List<Integer> result = new ArrayList<>();
