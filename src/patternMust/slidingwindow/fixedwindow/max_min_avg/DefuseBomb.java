@@ -8,6 +8,7 @@ public class DefuseBomb {
         int k = -2;
 
         System.out.println(Arrays.toString(new DefuseBomb().decryptSlidingWindow(arr, k)));
+        System.out.println(Arrays.toString(new DefuseBomb().decryptBruteForce(arr, k)));
     }
 
     public int[] decryptSlidingWindow(int[] code, int k) {
@@ -67,6 +68,33 @@ public class DefuseBomb {
                 right++;
                 windowSum += arr[right];
             }
+        }
+
+        return result;
+    }
+
+    public int[] decryptBruteForce(int[] code, int k) {
+
+        int n = code.length;
+        int[] result = new int[n];
+
+        if (k == 0) return result;
+
+        for (int i = 0; i < n; i++) {
+
+            int sum = 0;
+
+            if (k > 0) {
+                for (int j = 1; j <= k; j++) {
+                    sum += code[(i + j) % n];   // next elements
+                }
+            } else {
+                for (int j = 1; j <= -k; j++) {
+                    sum += code[(i - j + n) % n];  // previous elements
+                }
+            }
+
+            result[i] = sum;
         }
 
         return result;
