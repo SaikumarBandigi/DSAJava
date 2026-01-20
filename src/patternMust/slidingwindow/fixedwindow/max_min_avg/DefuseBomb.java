@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class DefuseBomb {
     public static void main(String[] args) {
         int[] arr = {2, 4, 9, 3};
-        int k = -2;
+        int k = 2;
 
         System.out.println(Arrays.toString(new DefuseBomb().decryptSlidingWindow(arr, k)));
         System.out.println(Arrays.toString(new DefuseBomb().decryptBruteForce(arr, k)));
@@ -78,7 +78,8 @@ public class DefuseBomb {
         int n = code.length;
         int[] result = new int[n];
 
-        if (k == 0) return result;
+        if (k == 0)
+            return result;
 
         for (int i = 0; i < n; i++) {
 
