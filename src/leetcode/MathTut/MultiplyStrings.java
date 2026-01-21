@@ -1,10 +1,9 @@
 package leetcode.MathTut;
 
-import patternMust.slidingwindow.fixedwindow.max_min_avg.Example;
 
 public class MultiplyStrings {
     public static void main(String[] args) {
-        System.out.println(new Example().multiply("12", "34"));
+        System.out.println(new MultiplyStrings().multiply("2", "3"));
     }
 
     public String multiply(String num1, String num2) {
