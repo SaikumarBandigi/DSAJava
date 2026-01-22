@@ -2,7 +2,7 @@ package leetcode.stringconcept;
 
 public class ValidateIPAddress {
     public static void main(String[] args) {
-        System.out.println(validIPAddress("1.1.1.1."));
+        System.out.println(validIPAddress("0.1.1.1"));
     }
 
 
