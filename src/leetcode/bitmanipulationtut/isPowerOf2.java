@@ -32,7 +32,6 @@ So for power of two → result becomes 0.
  */
         System.out.println(isPowerOfTwo(8));
 
-
     }
 
     static boolean isPowerOfTwo(int n) {
