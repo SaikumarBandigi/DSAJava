@@ -6,6 +6,7 @@ public class CountingBits {
     public static void main(String[] args) {
 
         System.out.println(Arrays.toString(countBits(5)));
+        System.out.println(Arrays.toString(countBitsOptimized(5)));
     }
 
     static int[] countBitsOptimized(int num) {
