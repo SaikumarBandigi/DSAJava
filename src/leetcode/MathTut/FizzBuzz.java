@@ -6,9 +6,14 @@ import java.util.List;
 public class FizzBuzz {
     public static void main(String[] args) {
 
+        System.out.println(fizzBuzz(2));
+        System.out.println(fizzBuzz(3));
+        System.out.println(fizzBuzz(4));
+        System.out.println(fizzBuzz(5));
+
     }
 
-    public List<String> fizzBuzz(int n) {
+    public static List<String> fizzBuzz(int n) {
         List<String> result = new ArrayList<>();
 
         for (int i = 1; i <= n; i++) {
