@@ -2,7 +2,7 @@ package patternMust.slidingwindow.fixedwindow.max_min_avg;
 
 public class MaximumNumberOfVowelsInASubstringOfGivenLength {
     public static void main(String[] args) {
-        String s = "eeetcode";
+        String s = "bbba";
         int k = 3;
         System.out.println(new MaximumNumberOfVowelsInASubstringOfGivenLength().maxVowels(s, k));
     }
@@ -15,11 +15,11 @@ public class MaximumNumberOfVowelsInASubstringOfGivenLength {
                 count++;
             }
         }
-
+        int n = s.length();
         int maxVowels = count;
 
         // 2️⃣ Sliding window
-        for (int right = k; right < s.length(); right++) {
+        for (int right = k; right < n; right++) {
 
             // add right
             if (isVowel(s.charAt(right))) {
@@ -27,11 +27,9 @@ public class MaximumNumberOfVowelsInASubstringOfGivenLength {
             }
 
             // remove left
-            int left = right - k;
-            if (isVowel(s.charAt(left))) {
+            if (isVowel(s.charAt(right - k))) {
                 count--;
             }
-
             maxVowels = Math.max(maxVowels, count);
         }
 
