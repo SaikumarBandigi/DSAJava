@@ -2,30 +2,37 @@ package patternMust.slidingwindow.fixedwindow.max_min_avg;
 
 public class MaximumNumberOfVowelsInASubstringOfGivenLength {
     public static void main(String[] args) {
-        String s = "leetcode";
+        String s = "eeetcode";
         int k = 3;
         System.out.println(new MaximumNumberOfVowelsInASubstringOfGivenLength().maxVowels(s, k));
     }
 
     public int maxVowels(String s, int k) {
-        int currentVowels = 0;
-        int maxVowels = 0;
-        int n = s.length();
-
+        // 1️⃣ First window
+        int count = 0;
         for (int i = 0; i < k; i++) {
             if (isVowel(s.charAt(i))) {
-                currentVowels++;
+                count++;
             }
         }
-        maxVowels = currentVowels;
-        for (int i = k; i < n; i++) {
-            if (isVowel(s.charAt(i - k))) {
-                currentVowels--;
+
+        int maxVowels = count;
+
+        // 2️⃣ Sliding window
+        for (int right = k; right < s.length(); right++) {
+
+            // add right
+            if (isVowel(s.charAt(right))) {
+                count++;
             }
-            if (isVowel(s.charAt(i))) {
-                currentVowels++;
+
+            // remove left
+            int left = right - k;
+            if (isVowel(s.charAt(left))) {
+                count--;
             }
-            maxVowels = Math.max(maxVowels, currentVowels);
+
+            maxVowels = Math.max(maxVowels, count);
         }
 
         return maxVowels;
