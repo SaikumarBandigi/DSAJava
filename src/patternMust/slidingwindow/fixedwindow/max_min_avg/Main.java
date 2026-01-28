@@ -9,6 +9,7 @@ public class Main {
         System.out.println(MaxSumSubarrayBrute(arr, k));
         System.out.println(MaxSumSubarraySlidingWindow(arr, k));
         System.out.println(MaxSumFirstWindowThenSlide(arr, k));
+        System.out.println(MinSumSubarraySlidingWindow(arr, k));
     }
 
     public static int MaxSumSubarrayBrute(int[] arr, int k) {
@@ -24,7 +25,7 @@ public class Main {
         return maxSum;
     }
 
-    public static int MaxSumSubarraySlidingWindow(int[] arr, int k) {
+    public static int MaxSumSubarraySlidingWindow(int[] arr, int k) {  // {2, 1, 5, 1, 3, 2}
         int left = 0;
         int windowSum = 0;
         int maxSum = Integer.MIN_VALUE;
@@ -60,6 +61,42 @@ public class Main {
         }
 
         return maxSum;
+    }
+
+    public static int exampl(int[] arr, int k) { // {2, 1, 5, 1, 3, 2}
+        int left = 0;
+        int wSum = 0;
+        int mSum = Integer.MIN_VALUE;
+
+        for (int right = 0; right < arr.length; right++) {
+            wSum += arr[right];
+
+            if (right - left + 1 == k) {
+                mSum = Math.max(wSum, mSum);
+                wSum -= arr[left];
+                left++;
+            }
+        }
+        return mSum;
+    }
+
+    public static int MinSumSubarraySlidingWindow(int[] arr, int k) {  // {2, 1, 5, 1, 3, 2}
+        int left = 0;
+        int windowSum = 0;
+        int minSum = Integer.MAX_VALUE;
+
+        // expand window using right pointer
+        for (int right = 0; right < arr.length; right++) {
+            windowSum += arr[right];   // add element
+            // when window size == k
+            if (right - left + 1 == k) {
+                minSum = Math.min(minSum, windowSum);
+                windowSum -= arr[left]; // remove element
+                left++;                 // slide window
+            }
+        }
+
+        return minSum;
     }
 
 
