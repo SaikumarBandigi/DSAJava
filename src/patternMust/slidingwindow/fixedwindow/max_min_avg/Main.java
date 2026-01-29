@@ -44,7 +44,7 @@ public class Main {
         return maxSum;
     }
 
-    public static int MaxSumFirstWindowThenSlide(int[] arr, int k) {
+    public static int MaxSumFirstWindowThenSlide(int[] arr, int k) { // {2, 1, 5, 1, 3, 2}
         int windowSum = 0;
 
         // 🔹 1) FIRST WINDOW
@@ -63,22 +63,6 @@ public class Main {
         return maxSum;
     }
 
-    public static int exampl(int[] arr, int k) { // {2, 1, 5, 1, 3, 2}
-        int left = 0;
-        int wSum = 0;
-        int mSum = Integer.MIN_VALUE;
-
-        for (int right = 0; right < arr.length; right++) {
-            wSum += arr[right];
-
-            if (right - left + 1 == k) {
-                mSum = Math.max(wSum, mSum);
-                wSum -= arr[left];
-                left++;
-            }
-        }
-        return mSum;
-    }
 
     public static int MinSumSubarraySlidingWindow(int[] arr, int k) {  // {2, 1, 5, 1, 3, 2}
         int left = 0;
