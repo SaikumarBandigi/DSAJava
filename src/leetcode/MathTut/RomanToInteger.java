@@ -6,6 +6,20 @@ public class RomanToInteger {
         System.out.println(romanToInt(s));
     }
 
+    private static int romanToInt(String s) {
+        int total = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+            int current = value(s.charAt(i));
+            if (i + 1 < s.length() && current < value(s.charAt(i + 1))) {
+                total -= current;
+            } else {
+                total += current;
+            }
+        }
+        return total;
+    }
+
     private static int value(char c) {
         return switch (c) {
             case 'I' -> 1;
@@ -15,22 +29,9 @@ public class RomanToInteger {
             case 'C' -> 100;
             case 'D' -> 500;
             case 'M' -> 1000;
-            default -> 0;
+            default -> throw new IllegalStateException("Unexpected value: " + c);
         };
     }
 
-    public static int romanToInt(String s) {
-        int total = 0;
 
-        for (int i = 0; i < s.length(); i++) {
-            int curr = value(s.charAt(i));
-
-            if (i + 1 < s.length() && curr < value(s.charAt(i + 1))) {
-                total -= curr;
-            } else {
-                total += curr;
-            }
-        }
-        return total;
-    }
 }
