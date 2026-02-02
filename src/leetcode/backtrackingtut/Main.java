@@ -27,4 +27,5 @@ public class Main {
             list.remove(list.size() - 1);
         }
     }
+
 }
