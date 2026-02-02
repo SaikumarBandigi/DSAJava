@@ -2,7 +2,7 @@ package leetcode.MathTut;
 
 public class RomanToInteger {
     public static void main(String[] args) {
-        String s = "XXVII";
+        String s = "IX";
         System.out.println(romanToInt(s));
     }
 
@@ -11,6 +11,7 @@ public class RomanToInteger {
 
         for (int i = 0; i < s.length(); i++) {
             int current = value(s.charAt(i));
+            // if current value < next value subtract else addition
             if (i + 1 < s.length() && current < value(s.charAt(i + 1))) {
                 total -= current;
             } else {
