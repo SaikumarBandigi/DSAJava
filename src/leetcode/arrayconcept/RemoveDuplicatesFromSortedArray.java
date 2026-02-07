@@ -1,5 +1,9 @@
-class Main{
-  public int removeDuplicates(int[] nums) {
+package leetcode.arrayconcept;
+
+
+public class RemoveDuplicatesFromSortedArray {
+
+    public int removeDuplicates(int[] nums) {
 
         if (nums.length == 0) {
             return 0;
@@ -15,4 +19,10 @@ class Main{
         }
 
         return i + 1;
-    }}
+    }
+
+    public static void main(String[] args) {
+
+    }
+
+}
