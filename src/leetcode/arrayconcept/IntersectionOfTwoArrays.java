@@ -1,4 +1,10 @@
-public class IntersectionOfTwoArrays{
+package leetcode.arrayconcept;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class IntersectionOfTwoArrays {
+
     public int[] intersection(int[] nums1, int[] nums2) {
         Set<Integer> set1 = new HashSet<>();
         Set<Integer> result = new HashSet<>();
@@ -25,4 +31,5 @@ public class IntersectionOfTwoArrays{
 
         return ans;
     }
+
 }
