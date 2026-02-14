@@ -6,8 +6,8 @@ import java.util.Set;
 
 public class IntersectionOfTwoArrays {
     public static void main(String[] args) {
-        int[] nums1 = {1, 2, 2, 1};
-        int[] nums2 = {1, 2};
+        int[] nums1 = {10, 20, 30, 40};
+        int[] nums2 = {10, 30};
 
         System.out.println(Arrays.toString(intersection(nums1, nums2)));
     }
