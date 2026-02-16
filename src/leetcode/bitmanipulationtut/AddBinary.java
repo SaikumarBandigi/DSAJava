@@ -6,10 +6,6 @@ public class AddBinary {
         String b = "0";
 
         System.out.println(addBinary(a, b));
-
-        int c = 4;
-
-
     }
 
 
