@@ -6,7 +6,7 @@ import java.util.Map;
 public class Example1 {
     public static void main(String[] args) {
 
-        int num = 6;
+        int num = 4;
         String res = intToStringRoman(num);
 
         System.out.println(res);
@@ -60,7 +60,6 @@ public class Example1 {
                 sum += current;
             }
         }
-
         return sum;
     }
 
