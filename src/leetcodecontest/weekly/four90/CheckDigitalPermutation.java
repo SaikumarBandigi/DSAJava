@@ -15,10 +15,10 @@ public class CheckDigitalPermutation {
         int sum = 0;
 
         // Step 1: Sum of factorials
-        while (n > 0) {
+        while (n != 0) {
             int digit = n % 10;
             sum += fact(digit);
-             n /= 10;
+            n /= 10;
         }
 
         // Step 2: Compare digit permutations
