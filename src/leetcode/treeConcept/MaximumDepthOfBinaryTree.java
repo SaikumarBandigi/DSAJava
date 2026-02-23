@@ -8,9 +8,6 @@ public class MaximumDepthOfBinaryTree {
                 1
                / \
               2   3
-             /
-            4
-
 
         */
 
@@ -18,9 +15,6 @@ public class MaximumDepthOfBinaryTree {
 
         root.left = new TreeNode(2);
         root.right = new TreeNode(3);
-
-        root.left.left = new TreeNode(4);
-
 
         int depth = maxDepth(root);
 

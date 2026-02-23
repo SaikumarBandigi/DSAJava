@@ -4,19 +4,17 @@ public class ReverseBits {
     public static void main(String[] args) {
 
         int num = 5;
-//        System.out.println(reverseBits(num));
-        System.out.println(reverseBitsOptimizec(num));
+        System.out.println(reverseBitsFixed(num));
     }
 
-    public static int reverseBits(int n) {
-
-        // Convert to 32-bit binary
-        String binary = String.format("%32s", Integer.toBinaryString(n)).replace(' ', '0');
+    public static long reverseBitsFixed(int n) {
+        String binary = String.format(
+                "%32s", Integer.toBinaryString(n)
+        ).replace(' ', '0');
 
         // Reverse string
         char[] arr = binary.toCharArray();
         int start = 0, end = arr.length - 1;
-
         while (start < end) {
             char temp = arr[start];
             arr[start] = arr[end];
@@ -27,9 +25,8 @@ public class ReverseBits {
 
         String reversed = new String(arr);
 
-        // Convert binary to decimal
-        return Integer.parseInt(reversed, 2);
-
+        // Convert binary to long instead of int
+        return Long.parseLong(reversed, 2);
     }
 
     public static long reverseBitsOptimizec(int n) {
