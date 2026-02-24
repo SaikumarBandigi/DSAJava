@@ -7,7 +7,7 @@ public class StringMatchingInAnArray {
     public static void main(String[] args) {
 
 
-        String[] words = {"leetcode", "et", "code"};
+        String[] words = {"mass", "as", "basis"};
         System.out.println(stringMatching(words));
     }
 
