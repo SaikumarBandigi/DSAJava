@@ -15,29 +15,22 @@ public class SetMisMatch {
     public static int[] findErrorNums(int[] nums) {
 
         Set<Integer> set = new HashSet<>();
-        int extraNumber = 0;
-        for (int num : nums) {
-            if (!set.add(num)) {
-                extraNumber = num;
-            }
-        }
-
-        int n = nums.length;
-
-        int expectSum = n * (n + 1) / 2;
+        int duplicate = 0;
         int actualSum = 0;
 
         for (int num : nums) {
+            if (!set.add(num)) {
+                duplicate = num;
+            }
             actualSum += num;
         }
 
-        int missingNumber = expectSum - actualSum;
+        int n = nums.length;
+        int expectedSum = n * (n + 1) / 2;
 
-        int[] res = new int[2];
-        res[0] = missingNumber;
-        res[1] = extraNumber;
+        int missing = expectedSum - (actualSum - duplicate);
 
-        return res;
+        return new int[]{duplicate, missing};
     }
 
 }
