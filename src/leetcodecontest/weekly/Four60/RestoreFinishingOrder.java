@@ -31,10 +31,7 @@ public class RestoreFinishingOrder {
 
         // Manual copy to result array of correct size
         int[] result = new int[idx];
-        for (int i = 0; i < idx; i++) {
-            result[i] = temp[i];
-        }
-
+        System.arraycopy(temp, 0, result, 0, idx);
         return result;
 
     }
