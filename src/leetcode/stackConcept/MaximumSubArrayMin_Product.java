@@ -10,7 +10,7 @@ public class MaximumSubArrayMin_Product {
         System.out.println(maxSumMinProductOptimized(new int[]{1, 2, 3, 2}));
     }
 
-    public static int maxSumMinProductOptimized(int[] nums) {
+    public static int maxSumMinProductOptimized(int[] nums) {  // 1 2 3 2
         int n = nums.length;
         long mod = 1_000_000_007;
 
@@ -42,7 +42,6 @@ public class MaximumSubArrayMin_Product {
 
             stack.push(i);
         }
-
         return (int) (maxProduct % mod);
     }
 
