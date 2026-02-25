@@ -1,12 +1,14 @@
 package leetcodecontest.weekly.Four55;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 public class CheckIfAnyElementHasPrimeElement {
     public static void main(String[] args) {
 
-        int[] nums = {1, 2, 3, 4, 5, 4};
+        int[] nums = new int[31];
+        Arrays.fill(nums, 1);
         /*
 
         1 - 1
@@ -40,7 +42,7 @@ public class CheckIfAnyElementHasPrimeElement {
         if (num % 2 == 0) {
             return false;
         }
-        for (int i = 2; i <= Math.sqrt(num); i++) {
+        for (int i = 3; i * i <= num; i += 2) {
             if (num % i == 0) return false;
         }
         return true;
