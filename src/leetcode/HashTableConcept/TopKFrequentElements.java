@@ -8,7 +8,7 @@ public class TopKFrequentElements {
         int[] nums = {1, 2, 1, 2, 1, 2, 3, 1, 3};
         int k = 2;
         System.out.println(Arrays.toString(topKFrequent(nums, k)));
-
+        System.out.println(Arrays.toString(topKFrequentUsingMinHeap(nums, k)));
     }
 
     public static int[] topKFrequent(int[] nums, int k) {
@@ -41,6 +41,39 @@ public class TopKFrequentElements {
         return result;
     }
 
+    public static int[] topKFrequentUsingMinHeap(int[] nums, int k) {
+
+        // Step 1: Count frequency
+        Map<Integer, Integer> map = new HashMap<>();
+
+        for (int num : nums) {
+            map.put(num, map.getOrDefault(num, 0) + 1);
+        }
+
+        // Step 2: Create Min Heap based on frequency
+        PriorityQueue<Map.Entry<Integer, Integer>> minHeap = new PriorityQueue<>(new MinHeapComparator());
+
+        // Step 3: Add elements to heap
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            minHeap.offer(entry);
+
+            // Maintain size k
+            if (minHeap.size() > k) {
+                minHeap.poll(); // remove smallest frequency
+            }
+        }
+
+        // Step 4: Extract result
+        int[] result = new int[k];
+        int i = 0;
+
+        while (!minHeap.isEmpty()) {
+            result[i++] = minHeap.poll().getKey();
+        }
+
+        return result;
+    }
+
 }
 
 // Custom Comparator Class
@@ -48,6 +81,16 @@ class FrequencyComparator implements Comparator<Map.Entry<Integer, Integer>> {
     @Override
     public int compare(Map.Entry<Integer, Integer> e1, Map.Entry<Integer, Integer> e2) {
         // Descending order based on frequency
-        return e2.getValue() - e1.getValue();
+        return Integer.compare(e2.getValue(), e1.getValue());
+    }
+}
+
+
+// Separate Comparator Class (Min Heap based on frequency)
+class MinHeapComparator implements Comparator<Map.Entry<Integer, Integer>> {
+    @Override
+    public int compare(Map.Entry<Integer, Integer> e1, Map.Entry<Integer, Integer> e2) {
+        // Ascending order (smallest frequency at top)
+        return Integer.compare(e1.getValue(), e2.getValue());
     }
 }
