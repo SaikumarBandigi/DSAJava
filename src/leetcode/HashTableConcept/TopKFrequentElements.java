@@ -37,7 +37,6 @@ public class TopKFrequentElements {
         for (int i = 0; i < k; i++) {
             result[i] = list.get(i).getKey();
         }
-
         return result;
     }
 
