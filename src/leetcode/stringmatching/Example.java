@@ -1,27 +1,41 @@
 package leetcode.stringmatching;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-
 public class Example {
-    public static void main(String[] args) {
-        int[] nums = {1, 2, 3};
-        int target = 5;
-        System.out.println(Arrays.toString(new Example().twoSum(nums, target)));
+    public static void rotateRight(int[] nums, int k) {
+        int n = nums.length;
+
+        // Handle cases where k > n
+        k = k % n;
+
+        // Step 1: Reverse entire array
+        reverse(nums, 0, n - 1);
+
+        // Step 2: Reverse first k elements
+        reverse(nums, 0, k - 1);
+
+        // Step 3: Reverse remaining elements
+        reverse(nums, k, n - 1);
     }
 
-    public int[] twoSum(int[] nums, int target) {
-        Map<Integer, Integer> map = new HashMap<>();
-        for (int i = 0; i < nums.length; i++) {
-            int complement = target - nums[i];
-            if (map.containsKey(complement)) {
-                return new int[]{map.get(complement), i};
-            }
-            map.put(nums[i], i);
+    private static void reverse(int[] nums, int start, int end) {
+        while (start < end) {
+            int temp = nums[start];
+            nums[start] = nums[end];
+            nums[end] = temp;
+            start++;
+            end--;
         }
-        return new int[]{-1, -1};
     }
 
+    // Testing
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5, 6, 7};
+        int k = 3;
 
+        rotateRight(arr, k);
+
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+    }
 }
