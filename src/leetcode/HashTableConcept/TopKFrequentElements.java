@@ -5,7 +5,7 @@ import java.util.*;
 public class TopKFrequentElements {
     public static void main(String[] args) {
 
-        int[] nums = {1, 2, 1, 2, 1, 2, 3, 1, 3};
+        int[] nums = {3, 3, 2, 1, 1, 1};
         int k = 2;
         System.out.println(Arrays.toString(topKFrequent(nums, k)));
         System.out.println(Arrays.toString(topKFrequentUsingMinHeap(nums, k)));
@@ -42,7 +42,6 @@ public class TopKFrequentElements {
     }
 
     public static int[] topKFrequentUsingMinHeap(int[] nums, int k) {
-
         // Step 1: Count frequency
         Map<Integer, Integer> map = new HashMap<>();
 

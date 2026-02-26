@@ -2,7 +2,8 @@ package leetcode.stackConcept;
 
 public class FindIndexOfTheFirstOccurenceOfAString {
     public static void main(String[] args) {
-        String haystack = "sadbsad", needle = "sad";
+        String haystack = "sadbsad";
+        String needle = "sad";
         System.out.println(strStr(haystack, needle));
     }
 
