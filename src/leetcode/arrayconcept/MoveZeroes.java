@@ -24,10 +24,10 @@ public class MoveZeroes {
 
     public static void main(String[] args) {
 
-        int[] arr = {0, 5, 0, 3, 8, 0, 2};
-
+        int[] arr = {0, 1, 0, 3, 12};
         moveZeroes(arr);
-
         System.out.println(Arrays.toString(arr));
+
     }
+
 }
