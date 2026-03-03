@@ -7,10 +7,19 @@ public class SubArraySumEqualsK {
     public static void main(String[] args) {
 
         int[] nums = {1, 2};
-        int k = 4;
+        int k = 3;
         System.out.println(subarraySum(nums, k));
 
     }
+    /*
+    If:
+prefixSum(j) - prefixSum(i) = k
+
+Then:
+Subarray from (i+1 to j) = k
+
+prefixSum(i) = prefixSum(j) - k
+     */
 
     public static int subarraySum(int[] nums, int k) {
 
@@ -23,8 +32,10 @@ public class SubArraySumEqualsK {
         for (int num : nums) {
             prefixSum += num;
 
-            if (map.containsKey(prefixSum - k)) {
-                count += map.get(prefixSum - k);
+            int prefixSumI = prefixSum - k;
+
+            if (map.containsKey(prefixSumI)) {
+                count += map.get(prefixSumI);
             }
 
             map.put(prefixSum, map.getOrDefault(prefixSum, 0) + 1);
