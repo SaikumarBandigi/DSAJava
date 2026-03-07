@@ -1,3 +1,7 @@
+package leetcode.HashMapTut;
+
+import java.util.HashMap;
+
 class LongestHarmoniousSubsequence {
 
     public int findLHS(int[] nums) {
@@ -17,6 +21,10 @@ class LongestHarmoniousSubsequence {
         }
 
         return max;
+    }
+
+    static void main() {
+
     }
 
 }
