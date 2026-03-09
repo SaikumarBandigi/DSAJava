@@ -1,4 +1,7 @@
+package leetcodecontest.weekly;
+
 class MinimumCapacityBox{
+
     public int minimumIndex(int[] capacity, int itemSize) {
         int minCapacity = Integer.MAX_VALUE;
         int index = -1;
@@ -11,6 +14,6 @@ class MinimumCapacityBox{
         }
 
         return index;
-        
     }
+
 }
