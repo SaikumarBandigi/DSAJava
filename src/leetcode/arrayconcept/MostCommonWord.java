@@ -17,8 +17,12 @@ public class MostCommonWord {
         // Replace punctuation and convert to lowercase
         paragraph = paragraph.toLowerCase().replaceAll("[^a-z]", " ");
 
+        System.out.println(paragraph);
+
         // Split words
         String[] words = paragraph.split("\\s+");
+
+        System.out.println(Arrays.toString(words));
 
         Map<String, Integer> countMap = new HashMap<>();
 
