@@ -1,11 +1,14 @@
 package leetcode.arrayconcept;
 
+import java.util.Collections;
+import java.util.PriorityQueue;
+
 public class MaximumProductofTwoElementsinanArray {
     public static void main(String[] args) {
 
         int[] arr = {1, 5, 4, 5};
         System.out.println(new MaximumProductofTwoElementsinanArray().maxProduct(arr));
-
+        System.out.println(new MaximumProductofTwoElementsinanArray().maxProductUsingHeap(arr));
     }
 
     public int maxProduct(int[] nums) {
@@ -22,6 +25,19 @@ public class MaximumProductofTwoElementsinanArray {
             }
         }
         return maxProduct;
+    }
+
+    public int maxProductUsingHeap(int[] nums) {
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+
+        for (int n : nums) {
+            pq.add(n);
+        }
+
+        int a = pq.poll();
+        int b = pq.poll();
+
+        return (a - 1) * (b - 1);
     }
 
 }
