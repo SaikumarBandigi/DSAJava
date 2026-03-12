@@ -1,4 +1,4 @@
-package leetcode.arrayconcept;
+package leetcode.HeapPriorityQueue;
 
 import java.util.Collections;
 import java.util.PriorityQueue;
@@ -7,8 +7,8 @@ public class MaximumProductofTwoElementsinanArray {
     public static void main(String[] args) {
 
         int[] arr = {1, 5, 4, 10};
-        System.out.println(new MaximumProductofTwoElementsinanArray().maxProduct(arr));
-        System.out.println(new MaximumProductofTwoElementsinanArray().maxProductUsingHeap(arr));
+        System.out.println(new leetcode.arrayconcept.MaximumProductofTwoElementsinanArray().maxProduct(arr));
+        System.out.println(new leetcode.arrayconcept.MaximumProductofTwoElementsinanArray().maxProductUsingHeap(arr));
     }
 
     public int maxProduct(int[] nums) {
