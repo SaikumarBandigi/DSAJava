@@ -100,4 +100,5 @@ public class PrimeGenerator {
             return val * sign;
         }
     }
+
 }
