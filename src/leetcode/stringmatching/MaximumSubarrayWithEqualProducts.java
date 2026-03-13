@@ -4,7 +4,7 @@ public class MaximumSubarrayWithEqualProducts {
     public static void main(String[] args) {
 
         int[] nums = {3, 4, 5};
-       System.out.println(maxLength(nums));
+        System.out.println(maxLength(nums));
 
     }
 
@@ -16,15 +16,15 @@ public class MaximumSubarrayWithEqualProducts {
         for (int i = 0; i < n; i++) {
             long product = 1;
             int firstGCDaValue = 0;
-            long l = 1;
+            long firstLCMaValue = 1;
 
             for (int j = i; j < n; j++) {
                 product *= nums[j];
 
                 firstGCDaValue = GCD(firstGCDaValue, nums[j]);
-                l = LCM(l, nums[j]);
+                firstLCMaValue = LCM(firstLCMaValue, nums[j]);
 
-                if (product == (long) firstGCDaValue * l) {
+                if (product == (long) firstGCDaValue * firstLCMaValue) {
                     maxLen = Math.max(maxLen, j - i + 1);
                 }
 
