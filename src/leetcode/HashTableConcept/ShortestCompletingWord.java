@@ -86,13 +86,14 @@ public class ShortestCompletingWord {
 
     private boolean isValidUsingtHashMap(HashMap<Character, Integer> licenseMap, HashMap<Character, Integer> wordMap) {
 
-        for (Map.Entry<Character, Integer> entry : licenseMap.entrySet()) {
-            char Lkey = entry.getKey();
-            int Lvalue = entry.getValue();
+        for (Map.Entry<Character, Integer> entry : licenseMap.entrySet()) {  // sspt
 
-            int Wvalue = wordMap.get(Lkey);
+            char lKey = entry.getKey();
+            int lValue = entry.getValue();
 
-            if (!wordMap.containsKey(Lkey) || Wvalue < Lvalue) {
+            int wValue = wordMap.getOrDefault(lKey, 0);
+
+            if (wValue < lValue) {
                 return false;
             }
         }
