@@ -12,6 +12,7 @@ public class FlippingAnImage {
             System.out.println(Arrays.toString(arr));
         }
 
+
     }
 
     public static int[][] flipAndInvertImage(int[][] image) {
