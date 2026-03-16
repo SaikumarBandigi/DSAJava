@@ -6,15 +6,15 @@ import java.util.Map;
 public class RearrangeCharactersToMakeTargetString {
     public static void main(String[] args) {
 
-        String s = "saiias", target = "sai";
+        String s = "saiia", target = "sai";
         System.out.println(new RearrangeCharactersToMakeTargetString().rearrangeCharacters(s, target));
 
     }
 
     public int rearrangeCharacters(String s, String target) {
 
-        Map<Character, Integer> sMap = new HashMap<>();
-        Map<Character, Integer> tMap = new HashMap<>();
+        Map<Character, Integer> sMap = new HashMap<>();  // s-3 a-2 i-2
+        Map<Character, Integer> tMap = new HashMap<>();  // s-1 a-1 i-1
 
         for (char ch : s.toCharArray()) {
             sMap.put(ch, sMap.getOrDefault(ch, 0) + 1);
