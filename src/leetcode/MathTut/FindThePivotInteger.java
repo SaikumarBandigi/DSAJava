@@ -5,6 +5,7 @@ public class FindThePivotInteger {
 
         int n = 8;
         System.out.println(new FindThePivotInteger().pivotInteger(n));
+
     }
 
     public int pivotInteger(int n) {
