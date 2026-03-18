@@ -17,12 +17,12 @@ public class HammingDistance {
         String xBinary = Integer.toBinaryString(x);
         String yBinary = Integer.toBinaryString(y);
 
-        String xValue = String.format("%32s", xBinary).replace(' ', '0');
-        String yValue = String.format("%32s", yBinary).replace(' ', '0');
+        xBinary = String.format("%32s", xBinary).replace(' ', '0');
+        yBinary = String.format("%32s", yBinary).replace(' ', '0');
 
         int count = 0;
         for (int i = 0; i < 32; i++) {
-            if (xValue.charAt(i) != yValue.charAt(i)) {
+            if (xBinary.charAt(i) != yBinary.charAt(i)) {
                 count++;
             }
         }
