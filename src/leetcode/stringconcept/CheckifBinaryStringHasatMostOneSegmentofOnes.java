@@ -3,7 +3,7 @@ package leetcode.stringconcept;
 public class CheckifBinaryStringHasatMostOneSegmentofOnes {
 
     public static void main(String[] args) {
-        String s = "101";
+        String s = "10";
         System.out.println(new CheckifBinaryStringHasatMostOneSegmentofOnes().checkOnesSegment(s));
     }
 
