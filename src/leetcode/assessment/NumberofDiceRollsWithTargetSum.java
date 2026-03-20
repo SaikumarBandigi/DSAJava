@@ -8,11 +8,11 @@ public class NumberofDiceRollsWithTargetSum {
         int k = 6;
         int target = 7;
 
-        System.out.println(new NumberofDiceRollsWithTargetSum().solveRec(n, k, target));
+        System.out.println(new NumberofDiceRollsWithTargetSum().solveRecTLE(n, k, target));
 
     }
 
-    public int solveRec(int n, int k, int target) {
+    public int solveRecTLE(int n, int k, int target) {
 
         // Base cases
         if (n == 0 && target == 0) return 1;
@@ -22,7 +22,7 @@ public class NumberofDiceRollsWithTargetSum {
 
         // Try all faces
         for (int face = 1; face <= k; face++) {
-            ways += solveRec(n - 1, k, target - face);
+            ways += solveRecTLE(n - 1, k, target - face);
         }
 
         return ways;
