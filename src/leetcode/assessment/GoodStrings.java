@@ -49,21 +49,18 @@ public class GoodStrings {
         int result = 0;
 
         // Frequency map for chars
-        HashMap<Character, Integer> charMap = new HashMap<>();
-        for (char c : chars.toCharArray()) {
-            charMap.put(c, charMap.getOrDefault(c, 0) + 1);
+        HashMap<Character, Integer> charMap = new HashMap<>();  // a-2 c-1 h-1 t-1
+        for (char ch : chars.toCharArray()) {
+            charMap.put(ch, charMap.getOrDefault(ch, 0) + 1);
         }
 
-        for (String word : words) {
-
+        for (String word : words) {// cat hat
             HashMap<Character, Integer> wordMap = new HashMap<>();
             boolean canForm = true;
 
-            for (char c : word.toCharArray()) {
-
-                wordMap.put(c, wordMap.getOrDefault(c, 0) + 1);
-
-                if (wordMap.get(c) > charMap.getOrDefault(c, 0)) {
+            for (char ch : word.toCharArray()) {
+                wordMap.put(ch, wordMap.getOrDefault(ch, 0) + 1);
+                if (wordMap.get(ch) > charMap.getOrDefault(ch, 0)) {
                     canForm = false;
                     break;
                 }
