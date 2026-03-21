@@ -58,7 +58,7 @@ public class GoodStrings {
             HashMap<Character, Integer> wordMap = new HashMap<>();
             boolean canForm = true;
 
-            for (char ch : word.toCharArray()) {
+            for (char ch : word.toCharArray()) {  // cat
                 wordMap.put(ch, wordMap.getOrDefault(ch, 0) + 1);
                 if (wordMap.get(ch) > charMap.getOrDefault(ch, 0)) {
                     canForm = false;
