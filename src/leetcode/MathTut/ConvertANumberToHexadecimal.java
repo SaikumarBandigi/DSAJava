@@ -3,7 +3,8 @@ package leetcode.MathTut;
 public class ConvertANumberToHexadecimal {
 
     public static void main(String[] args) {
-
+        int num = 26;
+        System.out.println(new ConvertANumberToHexadecimal().toHex(num));
     }
 
     public String toHex(int num) {
