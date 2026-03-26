@@ -57,6 +57,7 @@ public class PrimePairsWithTargetSum {
     }
 
     private List<List<Integer>> findPrimePairsOptimized(int n) {
+
         List<List<Integer>> result = new ArrayList<>();
 
         // Step 1: Sieve
@@ -77,8 +78,7 @@ public class PrimePairsWithTargetSum {
         // Step 2: Collect primes
         List<Integer> primes = new ArrayList<>();
         for (int i = 2; i <= n; i++) {
-            if (isPrime[i])
-                primes.add(i);
+            if (isPrime[i]) primes.add(i);
         }
 
         // Step 3: Two pointer
