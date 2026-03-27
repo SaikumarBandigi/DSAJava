@@ -3,7 +3,6 @@ package leetcode.NumberTheoryTut;
 import java.util.*;
 
 public class PrimePairsWithTargetSum {
-
     public static void main(String[] args) {
         int n = 10;
 
