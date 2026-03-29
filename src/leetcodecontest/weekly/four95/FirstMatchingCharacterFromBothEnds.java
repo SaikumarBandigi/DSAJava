@@ -18,7 +18,6 @@ public class FirstMatchingCharacterFromBothEnds {
                 return i;
             }
         }
-
         return -1;
     }
 
