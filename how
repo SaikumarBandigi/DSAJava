@@ -1,0 +1,258 @@
+[33mcommit 3ea58432b29365ba8e1744d0737a4762843d86cf[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31mgithub/master[m[33m)[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Tue Mar 17 13:31:13 2026 +0530
+
+    added BitwiseANDOfNumbersRange File
+
+[33mcommit b443f33af17d3ca822d9a2479201763aaafd58f1[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Mon Mar 16 18:39:54 2026 +0530
+
+    added FindThePivotInteger File
+
+[33mcommit 193a340653c85d2df5327a893d210fcf48322edf[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Sun Mar 15 14:41:09 2026 +0530
+
+    added RearrangeCharactersToMakeTargetString File
+
+[33mcommit 5e0b81bed4d9316b5c407a2a68be4124dcfa1b27[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Sun Mar 15 13:07:11 2026 +0530
+
+    added FirstLetterToAppearTwice File
+
+[33mcommit 99f221b871ddf81ec71132eece2026c00b6365e0[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Sun Mar 15 09:46:34 2026 +0530
+
+    added four93 pack
+
+[33mcommit 45bdf90d97b838084f1b45773ae744a88d477211[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Sun Mar 15 09:31:55 2026 +0530
+
+    added weekly contest four93 pack
+
+[33mcommit ebce71f9cbdef8275ab09c606d931e871635e143[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Sat Mar 14 20:29:35 2026 +0530
+
+    added one78 Pack
+
+[33mcommit 0d38e169716195315984a96e1d5afcc020f77aa8[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Sat Mar 14 17:19:26 2026 +0530
+
+    added ReplaceWords File
+
+[33mcommit 685d812c5d889c9a2b79addc51648f6e4c70432b[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Sat Mar 14 16:31:25 2026 +0530
+
+    added LongestPalindrome File
+
+[33mcommit 54f306e89b592f01f6b684d5ae8efd7d6d487f29[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Sat Mar 14 13:22:04 2026 +0530
+
+    updated & added HashTable code
+
+[33mcommit b8fe10b84819093a6080d549bef2958861c46c02[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Sat Mar 14 13:03:12 2026 +0530
+
+    added ShortestCompletingWord File
+
+[33mcommit 0e5b0d5b951fd2394ebe6f29827ee5afed89d0d5[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Fri Mar 13 14:04:57 2026 +0530
+
+    added Group Anagrams File
+
+[33mcommit 20771b81c0ce5f3941524732dd551caeddde9e17[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Fri Mar 13 12:58:11 2026 +0530
+
+    added MaximumSubarrayWithEqualProducts File
+
+[33mcommit 54434931b72fdc03b764f5273a21db8ef3e7a2ca[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Thu Mar 12 19:30:27 2026 +0530
+
+    added MaximumRepeatingSubstring File
+
+[33mcommit e5c8b27e4711da563c66d9ecb3eae806e1b24564[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Thu Mar 12 19:19:33 2026 +0530
+
+    added CheckIfAWordOccursAsaPrefixofAnyWordinaSentence File
+
+[33mcommit 1e753e2ed62715444e3882b018a459340c020884[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Thu Mar 12 19:10:10 2026 +0530
+
+    aded CountingWordsWithAGivenPrefix File
+
+[33mcommit acc243467fc2c695d2c3b434403192c091c8ee38[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Thu Mar 12 11:59:56 2026 +0530
+
+    added UglyNumber2 file
+
+[33mcommit 53ccae235c8e57cef380ddc99700eee72e01cc56[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Thu Mar 12 10:56:47 2026 +0530
+
+    added maxProductUsingHeap method
+
+[33mcommit 5c2df7b2a107e98dbfcc6b44bbb23f043d57fd56[m
+Merge: 726627b a2298b3
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Thu Mar 12 10:50:08 2026 +0530
+
+    local changes
+
+[33mcommit 726627b47a628eedd7a75db12bc13d911159b6d7[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Thu Mar 12 10:48:19 2026 +0530
+
+    local changes
+
+[33mcommit a2298b3a495b5d8a31cd043b86e9c2ec279c799d[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Wed Mar 11 21:55:11 2026 +0530
+
+    added FlippingAnImage practise file
+
+[33mcommit 69e31228949aa625546785f204b832587b292227[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Tue Mar 10 21:33:06 2026 +0530
+
+    added MostCommonWord File
+
+[33mcommit 29362bf457e680e2f02b9d4c505b97c167919bca[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Mon Mar 9 21:59:20 2026 +0530
+
+    did some changes
+
+[33mcommit 7e4317196168cc5c68f957ae347d59472beecc22[m
+Author: Saikumar Bandigi <88974882+SaikumarBandigi@users.noreply.github.com>
+Date:   Sun Mar 8 22:10:55 2026 +0530
+
+    Add MinimumCapacityBox class with minimumIndex method
+
+[33mcommit 1632d11c57408659c0391af3dda4811f597c0108[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Sat Mar 7 12:58:39 2026 +0530
+
+    added TwoSumII_InputArrayIsSorted
+
+[33mcommit 3f3fb1893e1105bb6051205c0b5c09ca6fb65c09[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Sat Mar 7 11:45:12 2026 +0530
+
+    added twopinters pack
+
+[33mcommit b1b1bb940c687d851bf3dd9b6a5a1be2b10556e6[m
+Author: Saikumar Bandigi <88974882+SaikumarBandigi@users.noreply.github.com>
+Date:   Fri Mar 6 22:45:40 2026 +0530
+
+    Implement Longest Harmonious Subsequence algorithm
+
+[33mcommit 0a051c9527d92b5e4ca6005c98ba7276c16a1cd2[m
+Author: Saikumar Bandigi <88974882+SaikumarBandigi@users.noreply.github.com>
+Date:   Thu Mar 5 19:18:41 2026 +0530
+
+    Add IsomorphicStrings class with isIsomorphic method
+    
+    Implement isIsomorphic method to check if two strings are isomorphic using HashMaps.
+
+[33mcommit 83157f8cabc5572f2351425744d91a988f844b3c[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Wed Mar 4 19:58:13 2026 +0530
+
+    added PrintInOrder file
+
+[33mcommit 697ae59811c3a171ed36cfed24fa8a960439965c[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Wed Mar 4 13:10:55 2026 +0530
+
+    added concurrencyTut pack
+
+[33mcommit eaa93fcc818fc132d6680b010cf176fcf945e35c[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Tue Mar 3 21:53:13 2026 +0530
+
+    added some files
+
+[33mcommit 62ddf41131fda2fcfe10098442ff2dc2d747324f[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Tue Mar 3 11:54:09 2026 +0530
+
+    added SubArraySumEqualsK file
+
+[33mcommit 0d91f4c423a0048a849cf63b32498ce1575bfd9d[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Mon Mar 2 11:42:03 2026 +0530
+
+    added RotateArray file
+
+[33mcommit 227cf26b1b6cd1ee509e958f468f0488f19a8880[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Mon Mar 2 09:45:06 2026 +0530
+
+    added ThirdMaximumNumber file
+
+[33mcommit ed1b6275ab504e5c074a89065258186912e1345f[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Sun Mar 1 11:14:41 2026 +0530
+
+    added TrimTrailingVowels file
+
+[33mcommit 5a11ff87509f55dad0622884e6287f5b9749bb37[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Sat Feb 28 20:50:10 2026 +0530
+
+    added SmallestPairWithDifferentFrequencies file
+
+[33mcommit 77a0142c02b4c4fb423e72c1f499019c334caec3[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Sat Feb 28 19:37:14 2026 +0530
+
+    added FlippingAnImage file
+
+[33mcommit ef1d0a33f58a4024b5a36fa34b606b22146e1d96[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Sat Feb 28 11:09:01 2026 +0530
+
+    added RelativeRanks
+
+[33mcommit 679da43d0ce3ecc2878720904c1d32f2c932ee9d[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Fri Feb 27 22:06:10 2026 +0530
+
+    added ExcelSheetColumnTitle
+
+[33mcommit dad40500fe029e14b39381614c1a5c36d5d0ac34[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Fri Feb 27 20:16:34 2026 +0530
+
+    added sytstem design tut
+
+[33mcommit fdc185d11661b8638bbb10cf6b289e28c626de07[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Thu Feb 26 22:05:46 2026 +0530
+
+    updated
+
+[33mcommit 4a3f4f92572622aa6ef3c9038ab0cf954166a330[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Thu Feb 26 17:34:07 2026 +0530
+
+    small changes
+
+[33mcommit c32f313c76af999d5f8ba9aec019fbacd055a4c7[m
+Author: Saikumar Bandigi <bandigisaikumar@gmail.com>
+Date:   Thu Feb 26 13:37:26 2026

@@ -46,7 +46,6 @@ public class SumOfGCDOfFormedPairs {
         return sum;
     }
 
-
     int GCD(int a, int b) {
         while (b != 0) {
             int temp = b;
@@ -54,10 +53,6 @@ public class SumOfGCDOfFormedPairs {
             a = temp;
         }
         return a;
-    }
-
-    boolean isEven(int num) {
-        return (num & 1) == 0;
     }
 
 }
