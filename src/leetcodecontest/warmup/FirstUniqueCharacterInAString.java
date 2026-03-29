@@ -6,13 +6,20 @@ import java.util.Map;
 public class FirstUniqueCharacterInAString {
     public static void main(String[] args) {
 
-        String s = "loveleetcode";
+        String s = "leetcode";
         System.out.println(new FirstUniqueCharacterInAString().firstUniqChar(s));
 
     }
+    /*
+    l - 1
+    e - 3
+    t - 1
+    c - 1
+    o - 1
+    d - 1
+     */
 
     public int firstUniqChar(String s) {
-
         Map<Character, Integer> map = new LinkedHashMap<>();
 
         for (char ch : s.toCharArray()) {
