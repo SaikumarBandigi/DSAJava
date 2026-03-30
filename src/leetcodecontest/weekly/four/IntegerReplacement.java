@@ -53,4 +53,29 @@ public class IntegerReplacement {
         return result;
     }
 
+    public int integerReplacementBitManipulation(int n) {
+
+        long num = n; // avoid overflow
+        int steps = 0;
+
+        while (num != 1) {
+
+            // even number
+            if ((num & 1) == 0) {
+                num >>= 1; // divide by 2
+            } else {
+                // odd number
+                if (num == 3 || (num & 3) == 1) {
+                    num--; // better to decrease
+                } else {
+                    num++; // better to increase
+                }
+            }
+
+            steps++;
+        }
+
+        return steps;
+    }
+
 }
