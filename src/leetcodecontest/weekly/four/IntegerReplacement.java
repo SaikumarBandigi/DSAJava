@@ -7,9 +7,10 @@ public class IntegerReplacement {
 
     public static void main(String[] args) {
 
-        int n = 4; // 4 -> 2 -> 1
+        int n = 3; // 4 -> 2 -> 1
         System.out.println(new IntegerReplacement().integerReplacementTLE(n));
         System.out.println(new IntegerReplacement().integerReplacement(n));
+        System.out.println(new IntegerReplacement().integerReplacementBitManipulation(n));
     }
 
     public int integerReplacementTLE(int num) {
@@ -45,8 +46,7 @@ public class IntegerReplacement {
         if (num % 2 == 0) {
             result = 1 + f(num / 2);
         } else {
-            result = 1 + Math.min(f(num + 1), f(num - 1)
-            );
+            result = 1 + Math.min(f(num + 1), f(num - 1));
         }
 
         memo.put(num, result);
