@@ -29,10 +29,10 @@ public class IntegerReplacement {
     private Map<Long, Integer> memo = new HashMap<>();
 
     public int integerReplacement(int n) {
-        return solve(n);
+        return f(n);
     }
 
-    private int solve(long num) {
+    private int f(long num) {
 
         if (num == 1) return 0;
 
@@ -43,9 +43,9 @@ public class IntegerReplacement {
         int result;
 
         if (num % 2 == 0) {
-            result = 1 + solve(num / 2);
+            result = 1 + f(num / 2);
         } else {
-            result = 1 + Math.min(solve(num + 1), solve(num - 1)
+            result = 1 + Math.min(f(num + 1), f(num - 1)
             );
         }
 
