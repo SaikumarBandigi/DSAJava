@@ -74,7 +74,6 @@ public class IntegerReplacement {
 
             steps++;
         }
-
         return steps;
     }
 
