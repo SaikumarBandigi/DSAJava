@@ -1,4 +1,9 @@
+package accenture.all;
+
+import java.util.HashMap;
+
 class IsomorphicStrings {
+
     public boolean isIsomorphic(String s, String t) {
         HashMap<Character, Character> map = new HashMap<>();
         HashMap<Character, Character> reverse = new HashMap<>();
@@ -21,4 +26,5 @@ class IsomorphicStrings {
         }
         return true;
     }
+
 }

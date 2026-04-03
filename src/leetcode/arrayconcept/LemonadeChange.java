@@ -1,5 +1,6 @@
-class Solution {
-    
+package leetcode.arrayconcept;
+
+public class LemonadeChange {
     public boolean lemonadeChange(int[] bills) {
         int five = 0;
         int ten = 0;
@@ -8,21 +9,17 @@ class Solution {
 
             if (bill == 5) {
                 five++;
-            } 
-            else if (bill == 10) {
+            } else if (bill == 10) {
                 if (five == 0) return false;
                 five--;
                 ten++;
-            } 
-            else { // bill == 20
+            } else { // bill == 20
                 if (ten > 0 && five > 0) {
                     ten--;
                     five--;
-                }
-                else if (five >= 3) {
+                } else if (five >= 3) {
                     five -= 3;
-                } 
-                else {
+                } else {
                     return false;
                 }
             }
@@ -30,5 +27,10 @@ class Solution {
 
         return true;
     }
-    
+
+    public static void main(String[] args) {
+        int[] bills = {5, 5, 5, 10, 20};
+        System.out.println(new LemonadeChange().lemonadeChange(bills));
+    }
+
 }

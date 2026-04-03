@@ -1,4 +1,6 @@
-class Solution {
+package accenture.all;
+
+class ValidPerfectSquare {
 
     public boolean isPerfectSquare(int num) {
         long left = 1;
@@ -17,6 +19,10 @@ class Solution {
             }
         }
         return false;
+    }
+
+    public static void main(String[] args) {
+
     }
 
 }

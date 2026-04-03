@@ -1,5 +1,14 @@
-public class IntegerToRoman{
-  int[] values = {
+package accenture.all;
+
+public class IntegerToRoman {
+
+    public static void main(String[] args) {
+        int num = 100;
+        System.out.println(new IntegerToRoman().getString(num));
+    }
+
+    String getString(int num) {
+        int[] values = {
                 1000, 900, 500, 400,
                 100, 90, 50, 40,
                 10, 9, 5, 4, 1
@@ -20,4 +29,5 @@ public class IntegerToRoman{
             }
         }
         return s.toString();
+    }
 }
