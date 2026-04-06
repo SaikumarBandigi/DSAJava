@@ -1,4 +1,6 @@
-class Solution {
+package leetcode.stringconcept;
+
+public class ToLowerCase {
 
     public String toLowerCase(String s) {
 
@@ -16,6 +18,13 @@ class Solution {
 
     char toLowerCase(char ch) {
         return Character.toLowerCase(ch);
+    }
+
+    public static void main(String[] args) {
+
+        String s = "Hello";
+        System.out.println(new ToLowerCase().toLowerCase(s));
+
     }
 
 }
