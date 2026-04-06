@@ -1,4 +1,4 @@
-package leetcodecontest.weekly.Four487;
+package leetcodecontest.weekly.Four87;
 
 public class CountMonobitIntegers {
     public static void main(String[] args) {
