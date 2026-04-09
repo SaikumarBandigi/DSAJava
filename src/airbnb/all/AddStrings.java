@@ -4,7 +4,7 @@ public class AddStrings {
 
     public static void main(String[] args) {
 
-        String num1 = "12", num2 = "12";
+        String num1 = "18", num2 = "18";
         System.out.println(new AddStrings().addStrings(num1, num2));
 
     }
