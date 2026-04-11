@@ -15,9 +15,9 @@ public class MergeSortedArray {
     }
 
     public void merge(int[] nums1, int m, int[] nums2, int n) {
-        int i = m - 1;        // last valid in nums1 // 3
-        int j = n - 1;        // last in nums2  // 5
-        int k = m + n - 1;    // last position in nums1 // 4
+        int i = m - 1;        // last valid in nums1 // 2->
+        int j = n - 1;        // last in nums2  // 1->0->-1
+        int k = m + n - 1;    // last position in nums1 // 4->3->2
 
         while (i >= 0 && j >= 0) {
             if (nums1[i] > nums2[j]) {
