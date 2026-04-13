@@ -26,7 +26,6 @@ public class AnglesOfATriangle {
         Arrays.sort(result);
 
         return result;
-
     }
 
 }
