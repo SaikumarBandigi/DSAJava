@@ -14,7 +14,8 @@ public class SumOfTwoIntegers {
     }
 
     public static void main(String[] args) {
-        int result = add(5, 3);
+        int result = add(2, 2);
         System.out.println("Sum: " + result); // Output: 8
     }
+
 }
