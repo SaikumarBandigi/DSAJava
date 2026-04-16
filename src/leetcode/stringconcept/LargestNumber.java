@@ -7,7 +7,7 @@ public class LargestNumber {
 
     public static void main(String[] args) {
 
-        int[] nums = {1, 2, 3, 4};
+        int[] nums = {5, 2, 9, 1};
         System.out.println(new LargestNumber().largestNumber(nums));
 
     }
@@ -43,7 +43,8 @@ public class LargestNumber {
 class CustomComparator implements Comparator<String> {
 
     @Override
-    public int compare(String a, String b) {
-        return (b + a).compareTo(a + b);
+    public int compare(String a, String b) { // a=5  b=2
+        return (b + a).compareTo(a + b);  // 25.compareTo(52)  -> negative so a comes before b -> 5 comes before 2
     }
+
 }
