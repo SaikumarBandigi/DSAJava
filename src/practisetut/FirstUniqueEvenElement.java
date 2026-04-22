@@ -9,7 +9,6 @@ public class FirstUniqueEvenElement {
 
         int[] nums = {3, 4, 2, 5, 4, 6};
         System.out.println(new FirstUniqueEvenElement().firstUniqueEven(nums));
-
     }
 
 
