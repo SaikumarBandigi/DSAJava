@@ -1,4 +1,6 @@
-class Solution {
+package practisetut;
+
+class PowerOfFour {
     public boolean isPowerOfFour(int n) {
         if (n <= 0) return false;
 

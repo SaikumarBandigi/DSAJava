@@ -4,20 +4,20 @@ public class ShortestWordDistance {
 
     public static int shortestDistance(String[] words, String word1, String word2) {
 
-        int index1 = -1;
-        int index2 = -1;
+        int Word1index1 = -1;
+        int Word2index2 = -1;
         int minDistance = Integer.MAX_VALUE;
 
         for (int i = 0; i < words.length; i++) {
             if (words[i].equals(word1)) {
-                index1 = i;
+                Word1index1 = i;
             }
             if (words[i].equals(word2)) {
-                index2 = i;
+                Word2index2 = i;
             }
 
-            if (index1 != -1 && index2 != -1) {
-                minDistance = Math.min(minDistance, Math.abs(index1 - index2));
+            if (Word1index1 != -1 && Word2index2 != -1) {
+                minDistance = Math.min(minDistance, Math.abs(Word1index1 - Word2index2));
             }
         }
 
@@ -27,9 +27,9 @@ public class ShortestWordDistance {
 
     public static void main(String[] args) {
 
-        String[] words = {"practice", "makes", "perfect", "coding", "makes"};
-        String word1 = "coding";
-        String word2 = "practice";
+        String[] words = {"sai", "sai", "perfect", "isha"};
+        String word1 = "sai";
+        String word2 = "isha";
 
         int result = shortestDistance(words, word1, word2);
         System.out.println("Shortest distance: " + result);
