@@ -6,6 +6,7 @@ public class UglyNumber {
 
         int n = 16;
         System.out.println(new UglyNumber().isUgly(n));
+
     }
 
     public boolean isUgly(int n) {
@@ -18,7 +19,7 @@ public class UglyNumber {
                 n /= f;
             }
         }
-        return n==1;
+        return n == 1;
     }
 
 }
