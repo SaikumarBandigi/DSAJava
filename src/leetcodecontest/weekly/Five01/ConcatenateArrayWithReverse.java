@@ -14,7 +14,7 @@ public class ConcatenateArrayWithReverse {
 
     public int[] concatWithReverse(int[] nums) {
 
-        int n = nums.length;
+        int n = nums.length; // 3
         int[] ans = new int[2 * n];
 
         for (int i = 0; i < n; i++) {
