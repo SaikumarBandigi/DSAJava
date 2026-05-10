@@ -1,6 +1,14 @@
 package apple;
 
-class Solution {
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+
+class FirstUniqueEvenElement {
+    public static void main(String[] args) {
+        int[] nums = {1, 1, 2, 3, 3, 4, 5, 5, 6, 6};
+        System.out.println(new FirstUniqueEvenElement().firstUniqueEven(nums));
+    }
+
     public int firstUniqueEven(int[] nums) {
         int res = -1;
         HashMap<Integer, Integer> map = new LinkedHashMap<>();
