@@ -24,7 +24,7 @@ public class LongestConsecutiveSequence {
 
         for (int num : set) {
             // check starting point of sequence
-            if (!set.contains(num - 1)) {
+            if (!set.contains(num - 1)) {   // it checks here ..... previous number exists or not
                 int currentNum = num;
                 int currentStreak = 1;
                 // count consecutive numbers
@@ -38,6 +38,14 @@ public class LongestConsecutiveSequence {
 
         return longestStreak;
     }
+
+    /*
+
+    for → traverse
+    if → filtering/start condition
+    while → expansion/continuous process
+
+     */
 
 
 }
