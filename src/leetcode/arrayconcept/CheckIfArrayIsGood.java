@@ -11,14 +11,12 @@ public class CheckIfArrayIsGood {
     }
 
     public boolean isGood(int[] nums) {
-
-        Arrays.sort(nums);
+        Arrays.sort(nums); // 1 2 3 3
 
         int n = nums.length;
 
         // Check 1 to n-1
         for (int i = 0; i < n - 1; i++) {
-
             if (nums[i] != i + 1) {
                 return false;
             }
