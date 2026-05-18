@@ -6,6 +6,7 @@ public class DetectCapital {
 
         String s = "USA";
         System.out.println(new DetectCapital().detectCapitalUse(s));
+        System.out.println(new DetectCapital().detectCapitalUse("FlaG"));  // F && laG.equals(lag)
 
     }
 
@@ -22,8 +23,7 @@ public class DetectCapital {
         }
 
         // Case 3: First letter capital only
-        if (Character.isUpperCase(word.charAt(0)) &&
-                word.substring(1).equals(word.substring(1).toLowerCase())) {
+        if (Character.isUpperCase(word.charAt(0)) && word.substring(1).equals(word.substring(1).toLowerCase())) {
             return true;
         }
 
