@@ -26,7 +26,7 @@ public class DigitFrequencyScore {
             char key = entry.getKey();
             Integer value = entry.getValue();
 
-            score += (key - '0') * value;
+            score = score + (key - '0') * value;
 
         }
 
