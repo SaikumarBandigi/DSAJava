@@ -28,7 +28,7 @@ public class SelfDividingNumbers {
 
     boolean isSelfDividing(int num) {
 
-        String s = String.valueOf(num);
+        String s = String.valueOf(num);  // 128
 
         int[] arr = new int[s.length()];  // 128
 
