@@ -15,27 +15,20 @@ public class ValidBinaryStringsWithCostLimit {
     public List<String> generateValidStrings(int n, int k) {
 
         List<String> res = new ArrayList<>();
-
         List<String> binaryStrings = getBinaryStringsAccordtingToLength(n);
-
         List<String> binaryStringsWithoutConsecutive1s = binaryStringsWithoutConsecutive1(binaryStrings);
 
-
         for (String s : binaryStringsWithoutConsecutive1s) {
-
             int cost = 0;
-
             for (int i = 0; i < s.length(); i++) {
                 if (s.charAt(i) == '1') {
                     cost += i;
                 }
             }
-
             if (cost <= k) {
                 res.add(s);
             }
         }
-
         return res;
     }
 
