@@ -4,9 +4,32 @@ public class DayoftheYear {
 
     public static void main(String[] args) {
 
-        String date = "2008-10-10";
+        String date = "2008-03-10";
         System.out.println(new DayoftheYear().dayOfYear(date));
+        System.out.println(new DayoftheYear().dayOfYearOptimal(date));
 
+    }
+
+    public int dayOfYearOptimal(String date) {
+        String[] arr = date.split("-");
+
+        int year = Integer.parseInt(arr[0]);
+        int month = Integer.parseInt(arr[1]);
+        int day = Integer.parseInt(arr[2]);
+
+        int[] daysInMonth = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+        if (isLeapYear(year)) {
+            daysInMonth[1] = 29;
+        }
+
+        int totalDays = day;
+
+        for (int i = 0; i < month - 1; i++) {
+            totalDays += daysInMonth[i];
+        }
+
+        return totalDays;
     }
 
     public int dayOfYear(String date) {
@@ -69,23 +92,6 @@ public class DayoftheYear {
         }
     }
 
-    public static int getDaysIfIsLeap(String month) {
-        return switch (month) {
-            case "01", "03", "05", "07", "08", "10", "12" -> 31;
-            case "04", "06", "09", "11" -> 30;
-            case "02" -> 29;
-            default -> -1;
-        };
-    }
-
-    public static int getDaysIfNotLeap(String month) {
-        return switch (month) {
-            case "01", "03", "05", "07", "08", "10", "12" -> 31;
-            case "04", "06", "09", "11" -> 30;
-            case "02" -> 28;
-            default -> -1;
-        };
-    }
 
     public static boolean isLeapYear(int year) {
         if (year % 400 == 0) {
