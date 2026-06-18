@@ -18,11 +18,12 @@ public class SubstringsofSizeThreewithDistinctCharacters {
         String[] arr = new String[s.length() - 2];
 
         for (int i = 0; i < s.length() - 2; i++) {
-            StringBuilder substring = new StringBuilder();
+            StringBuilder word = new StringBuilder();
             for (int j = i; j < i + 3 && j < s.length(); j++) {
-                substring.append(s.charAt(j));
+                //   substring.append(s.charAt(j));
+                word.append(s.charAt(j));
             }
-            arr[i] = substring.toString();
+            arr[i] = word.toString();
         }
 
         int count = 0;
