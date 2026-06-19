@@ -3,7 +3,7 @@ package leetcode.MathTut;
 public class CountDigitAppearances {
 
     public static void main(String[] args) {
-        int[] nums = {2, 54, 32, 22};
+        int[] nums = {12, 54, 32, 22};
         int digit = 2;
         System.out.println(new CountDigitAppearances().countDigitOccurrences(nums, digit));
     }
