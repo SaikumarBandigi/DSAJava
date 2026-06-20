@@ -9,7 +9,7 @@ public class BitManipulation {
 
     // 2. Check ith Bit
     public static boolean isBitSet(int n, int i) {
-        return (n & (1 << i)) != 0;
+        return ((n >> i) & 1) == 1;
     }
 
     // 3. Set ith Bit
@@ -85,7 +85,7 @@ public class BitManipulation {
 
         System.out.println("Power Of Two ? " + isPowerOfTwo(16));
 
-        System.out.println("Set Bits = " + countSetBits(13));
+        System.out.println("Set Bits = " + countSetBits(7));
 
         int[] arr = {2, 3, 2, 4, 4};
 
