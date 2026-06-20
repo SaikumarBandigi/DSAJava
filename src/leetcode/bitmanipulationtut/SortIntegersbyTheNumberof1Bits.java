@@ -6,7 +6,7 @@ public class SortIntegersbyTheNumberof1Bits {
 
     public static void main(String[] args) {
 
-        int[] arr = {10000, 10000};
+        int[] arr = {2, 4, 6, 1};
         System.out.println(Arrays.toString(new SortIntegersbyTheNumberof1Bits().sortByBits(arr)));
 
     }
