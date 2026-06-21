@@ -22,7 +22,7 @@ public class MaximumManhattanDistanceAfterAllMoves {
             }
         }
 
-        return Math.abs(dx) + Math.abs(dy) + underscore;
+        return Math.abs(0 - dx) + Math.abs(0 - dy) + underscore;
     }
 
 }
