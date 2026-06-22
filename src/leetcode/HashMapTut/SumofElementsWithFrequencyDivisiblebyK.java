@@ -17,6 +17,9 @@ public class SumofElementsWithFrequencyDivisiblebyK {
 
     public int sumDivisibleByKOptimal(int[] nums, int k) {
 
+        // 4 -> 3
+        // 1 -> 1
+
         int[] freq = new int[101];
 
         for (int num : nums) {
