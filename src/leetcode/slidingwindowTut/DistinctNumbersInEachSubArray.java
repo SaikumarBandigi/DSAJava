@@ -18,7 +18,6 @@ public class DistinctNumbersInEachSubArray {
     int[] getDistinctNumbersInEachWind(int[] arr, int k) {
 
         // 0 0 0 0
-        //
         int[] ans = new int[arr.length - k + 1];
 
         Map<Integer, Integer> map = new HashMap<>();
@@ -37,7 +36,8 @@ public class DistinctNumbersInEachSubArray {
             map.put(left, map.get(left) - 1);
 
             if (map.get(left) == 0) {
-                map.remove(left);
+                map.remove(left); //Remove the key when frequency becomes 0 because that element is no longer present in the current window,
+                // and keeping it would make map.size() give an incorrect distinct count.
             }
             map.put(right, map.getOrDefault(right, 0) + 1);
 
@@ -45,7 +45,6 @@ public class DistinctNumbersInEachSubArray {
         }
 
         return ans;
-
     }
 
 }
@@ -59,4 +58,15 @@ LeetCode 438. Find All Anagrams in a String
 LeetCode 567. Permutation in String
 LeetCode 992. Subarrays with K Different Integers
 
+
+//
+Maximum Sum of Size K
+        ↓
+First Negative in Every Window
+        ↓
+Count Distinct in Every Window
+        ↓
+Longest Substring Without Repeating Characters
+        ↓
+Subarrays with K Distinct Integers
  */
