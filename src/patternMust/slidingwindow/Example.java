@@ -1,32 +1,32 @@
 package patternMust.slidingwindow;
 
 public class Example {
-    public static int maxSumSubarray(int[] arr, int k) {
-        if (arr == null || arr.length < k) {
-            throw new IllegalArgumentException("Array size is smaller than k");
-        }
+    public static void main(String[] args) {
 
-        int maxsum;
-        int wSum = 0;
+        int[] arr = {1, 2, 3, 4, 5};
+        int k = 3;
+        System.out.println(new Example().getMax(arr, k));
 
+    }
+
+    int getMax(int[] arr, int k) {
+
+        int sum = 0;
         for (int i = 0; i < k; i++) {
-            wSum += arr[i];
+            sum += arr[i];
         }
 
-        maxsum = wSum;
+        int max = sum;
 
         for (int i = k; i < arr.length; i++) {
-            wSum = wSum + arr[i] - arr[i - k];
-            maxsum = Math.max(wSum, maxsum);
+
+            int left = arr[i - k];
+            int right = arr[i];
+
+            sum = sum - left + right;
+            max = Math.max(max, sum);
         }
-
-        return maxsum;
+        return max;
     }
 
-    public static void main(String[] args) {
-        int[] arr = {2, 1, 5, 1, 3, 2};
-        int k = 3;
-        int result = maxSumSubarray(arr, k);
-        System.out.println(result);
-    }
 }
