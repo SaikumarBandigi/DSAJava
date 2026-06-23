@@ -6,6 +6,7 @@ public class TotalHamingDistance {
 
         int[] nums = {4, 14, 4};
         System.out.println(new TotalHamingDistance().totalHammingDistance(nums));
+        System.out.println(new TotalHamingDistance().totalHammingDistancOptimal(nums));
 
     }
 
@@ -25,4 +26,37 @@ public class TotalHamingDistance {
         return sum;
     }
 
+    public int totalHammingDistancOptimal(int[] nums) {
+
+        int totalDistance = 0;
+        int n = nums.length;
+
+        for (int bit = 0; bit < 32; bit++) {
+            int ones = 0;
+            for (int num : nums) {
+                if (isNthBitSet(num, bit)) {
+                    ones++;
+                }
+            }
+            int zeros = n - ones;
+            totalDistance += ones * zeros;
+        }
+
+        return totalDistance;
+    }
+
+    boolean isNthBitSet(int num, int bit) {
+        return ((num >> bit) & 1) == 1;
+    }
+
 }
+
+/*
+
+0100
+^
+1110
+_________
+1010 -> 10 then Integer.bitCount(10) counts number of 1 bits in Binary Representation
+
+ */
