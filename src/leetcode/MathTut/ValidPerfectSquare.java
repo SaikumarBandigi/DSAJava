@@ -4,7 +4,7 @@ public class ValidPerfectSquare {
 
     public static void main(String[] args) {
 
-        int num = 16;
+        int num = 9;
         System.out.println(new ValidPerfectSquare().isPerfectSquare(num));
 
     }
