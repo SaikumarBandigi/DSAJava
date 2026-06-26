@@ -11,6 +11,7 @@ public class UncommonWordsfromTwoSentences {
         String s1 = "this apple is sweet";
         String s2 = "this apple is sour";
         System.out.println(Arrays.toString(new UncommonWordsfromTwoSentences().uncommonFromSentences(s1, s2)));
+
     }
 
     public String[] uncommonFromSentences(String s1, String s2) {
