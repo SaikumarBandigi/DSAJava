@@ -4,7 +4,7 @@ public class LongestSubsequenceWithNonZeroBitwiseXOR {
 
     public static void main(String[] args) {
 
-        int[] nums = {1, 2, 3};
+        int[] nums = {1, 0, 1};
         System.out.println(new LongestSubsequenceWithNonZeroBitwiseXOR().longestSubsequenceBruteForce(nums));
         System.out.println(new LongestSubsequenceWithNonZeroBitwiseXOR().longestSubsequenceOptimal(nums));
 
