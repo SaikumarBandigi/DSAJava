@@ -7,6 +7,9 @@ public class ReverseAString {
 
     public static void main(String[] args) {
 
+
+
+
         char[] arr = {'j', 'a', 'v', 'a'};
 
 //        char[] res = new char[arr.length];
