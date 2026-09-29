@@ -1,5 +1,7 @@
 package leetcode.slidingwindowTut.fixed;
 
+import java.util.Arrays;
+
 public class MinimumDifferenceBetweenHighestandLowestofKScores {
 
     public static void main(String[] args) {
@@ -8,17 +10,14 @@ public class MinimumDifferenceBetweenHighestandLowestofKScores {
         System.out.println(new MinimumDifferenceBetweenHighestandLowestofKScores().minimumDifference(arr, k));
     }
 
-    public int minimumDifference(int[] arr, int k) {
+    public int minimumDifference(int[] nums, int k) {
+        Arrays.sort(nums); // 1 4 9 7
 
         int minDifference = Integer.MAX_VALUE;
 
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = i + 1; j < arr.length; j++) {
-                int difference = (Math.max(arr[i], arr[j]) - Math.min(arr[i], arr[j]));
-                if (difference < minDifference) {
-                    minDifference = difference;
-                }
-            }
+        for (int i = 0; i <= nums.length - k; i++) {
+            int difference = nums[i + k - 1] - nums[i];
+            minDifference = Math.min(minDifference, difference);
         }
         return minDifference;
     }
